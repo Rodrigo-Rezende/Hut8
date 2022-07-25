@@ -1,21 +1,24 @@
-nome = 'Rodrigo'
-sobrenome = 'Rezende'
-dia_nascimento='15'
-mes_nascimento='12'
-ano_nascimento='1997'
-idade=24
-nota1=8
-nota2=7
+// 1
+var nome = 'Rodrigo'
+var sobrenome = 'Rezende'
+var dia_nascimento=13
+var mes_nascimento=5
+var ano_nascimento=1999
+var idade=23
+var nota1=8
+var nota2=7
 
-var media = new Function('a', 'b', 'return (a + b)/2');
-var adder = new Function('a', 'b', 'c', 'return(a+b+c)');
+function media(nota1, nota2){
+    return (nota1+nota2)/2
+}
+console.log("Nome Completo: "+nome+" "+sobrenome)
+console.log("Idade: "+idade)
+console.log("Data de Nascimento: "+dia_nascimento+"/"+mes_nascimento+"/"+ano_nascimento)
+console.log("Média: "+media(nota1,nota2))
 
-const message ="Nome comepleto: "+ nome +" "+sobrenome;
-const message1 ="Idade: " + idade;
-const message2 = "Data de Nascimento: " + dia_nascimento + "/"+ mes_nascimento + "/"+ ano_nascimento
-media1 = media(nota1, nota2)
-const message3 = "Média: " + media1
+// 2
+function adder(){
+    return 5+10+15
+}
 soma= adder(5,10,15);
-
-console.log(message+"\n"+message1+"\n"+message2 +"\n"+message3)
 console.log(soma)
