@@ -13,8 +13,9 @@ check(number1)
 check(number2)
 
 // 2
-var x = prompt("Digite um numero:");
-var y = prompt("Digite outro numero:");
+const prompt=require("prompt-sync")({sigint:true})
+var x = prompt("Digite um numero:")
+var y = prompt("Digite outro numero:")
 
 function check_postive(x,y){
     if(x>=0 || y>=0){
